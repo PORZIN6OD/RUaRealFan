@@ -25,15 +25,15 @@ print("Hello,", user_name + ", here are the questions below!")
 print()
 
 while True:
-    try:
+    try: 
         print("Question 1: Which One of These Basketball/NBA Players DID NOT play for Rutgers?")
         print("Press Either 1, 2, 3, or 4.")
         user_input = int(input("1. Dahntay Jones\n2. Roy Hinson\n3. Ron Harper Jr.\n4. Samuel Dalembert\n"))
-    except ValueError:
+    except ValueError: # Exception in case user doesn't enter an integer.
         print("That's invalid, try again")
         print()
         continue
-    if user_input >= 5 or user_input <= 0:
+    if user_input >= 5 or user_input <= 0: # There are only four potential answers.
         print("That's invalid, try again")
         print()
         continue
@@ -87,7 +87,7 @@ while True:
                     continue
                 elif user_input == 1 or user_input == 2 or user_input == 4:
                     print()
-                    print("Sorry, but the NFL, MLB and NBA has never had a 30+ year commissioner as of this writing.")
+                    print("Sorry," + user_name + ", but the NFL, MLB and NBA has never had a 30+ year commissioner as of this writing.")
                     print("Stern has been longest-tenured commissioner in the big four sports. Better luck next time.")
                     print()
                     sys.exit()
