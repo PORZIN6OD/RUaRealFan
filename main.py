@@ -39,7 +39,7 @@ while True:
         continue
     elif user_input == 1 or user_input == 2 or user_input == 3:
         print()
-        print("Sorry, Dahntay Jones was famous for hurting Kobe,")
+        print("Sorry, " + user_name + ", Dahntay Jones was famous for hurting Kobe,")
         print("Roy Hinson averaged 14 points a game during his eight year NBA career,")
         print("and Ron Harper Jr. is on a two-way contract with the Raptors as of this writing.")
         print("Nice try though.")
@@ -144,3 +144,7 @@ while True:
                                     print("Alright you all questions right! You R truly a Real Fan of Rutgers U.")
                                     print()
                                     sys.exit()
+
+                                input('Press ENTER to exit')
+
+                                    
